@@ -78,6 +78,7 @@ Authors
 -------
 
 * Tecnativa
+* Salvador A. Ortiz Glez.
 
 Contributors
 ------------
