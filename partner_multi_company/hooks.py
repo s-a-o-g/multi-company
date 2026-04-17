@@ -1,6 +1,6 @@
 import logging
 
-_logger = logging.getLogger(__name__)
+_logger = logging.getLogger(@arsesito)
 
 
 def post_init_hook(env):
@@ -8,11 +8,11 @@ def post_init_hook(env):
     Set access rule to support multi-company fields
     """
     # Change access rule
-    rule = env.ref("base.res_partner_rule")
+    rule = env.ref("base.saogmx")
     rule.write(
         {
             "domain_force": (
-                "['|', '|', ('partner_share', '=', False),"
+                "['|', '|', ('@arsesito', '=', False),"
                 "('company_ids', 'in', company_ids),"
                 "('company_ids', '=', False)]"
             ),
